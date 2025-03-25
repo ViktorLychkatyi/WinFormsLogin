@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\createdaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:createdaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\createdaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:createdaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\createdaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,6 +31,10 @@
       "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -35,36 +43,24 @@
       "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\winformslogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:winformslogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\winformslogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:winformslogin.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\forgotpassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:forgotpassword.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|c:\\users\\viktor\\desktop\\winformslogin\\winformslogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{816444C7-FEC1-4240-A4A4-C6A28D9E1868}|WinFormsLogin.csproj|solutionrelative:winformslogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,66 +75,132 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ForgotPassword.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "ForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.cs",
+              "RelativeToolTip": "ForgotPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:05:21.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAwwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T22:39:13.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
+              "RelativeDocumentMoniker": "Registration.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
+              "RelativeToolTip": "Registration.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T07:48:52.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
+              "RelativeDocumentMoniker": "Registration.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T07:40:07.327Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreatedAccount.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs",
               "RelativeDocumentMoniker": "CreatedAccount.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs",
               "RelativeToolTip": "CreatedAccount.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAtwBAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:37:07.303Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs",
-              "RelativeDocumentMoniker": "CreatedAccount.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:34:59.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Dashboard.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Dashboard.cs",
               "RelativeDocumentMoniker": "Dashboard.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Dashboard.cs",
               "RelativeToolTip": "Dashboard.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAnwBoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAewBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T09:26:51.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WinFormsLogin.csproj",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
-              "RelativeDocumentMoniker": "WinFormsLogin.csproj",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
-              "RelativeToolTip": "WinFormsLogin.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-24T09:21:14.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ForgotPassword.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.cs",
               "RelativeDocumentMoniker": "ForgotPassword.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "ForgotPassword.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:21:40.809Z"
+              "WhenOpened": "2025-03-24T09:21:40.809Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ForgotPassword.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.Designer.cs",
+              "RelativeDocumentMoniker": "ForgotPassword.Designer.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\ForgotPassword.Designer.cs",
+              "RelativeToolTip": "ForgotPassword.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T11:54:29.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs",
+              "RelativeDocumentMoniker": "CreatedAccount.cs",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CreatedAccount.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T09:34:59.24Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "WinFormsLogin.csproj",
+              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
+              "RelativeDocumentMoniker": "WinFormsLogin.csproj",
+              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
+              "RelativeToolTip": "WinFormsLogin.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T09:21:14.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Dashboard.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Dashboard.Designer.cs",
               "RelativeDocumentMoniker": "Dashboard.Designer.cs",
@@ -146,56 +208,36 @@
               "RelativeToolTip": "Dashboard.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:02:53.337Z"
+              "WhenOpened": "2025-03-24T09:02:53.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Dashboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Dashboard.cs",
               "RelativeDocumentMoniker": "Dashboard.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Dashboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Dashboard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:00:37.509Z"
+              "WhenOpened": "2025-03-24T09:00:37.509Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T08:32:04.905Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "WinFormsLogin",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
-              "RelativeDocumentMoniker": "WinFormsLogin.csproj",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\WinFormsLogin.csproj",
-              "RelativeToolTip": "WinFormsLogin.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-24T08:29:05.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Login.resx",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.resx",
-              "RelativeDocumentMoniker": "Login.resx",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.resx",
-              "RelativeToolTip": "Login.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-03-24T08:24:01.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Registration.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.Designer.cs",
               "RelativeDocumentMoniker": "Registration.Designer.cs",
@@ -203,67 +245,20 @@
               "RelativeToolTip": "Registration.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:56:38.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Registration.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
-              "RelativeDocumentMoniker": "Registration.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
-              "RelativeToolTip": "Registration.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAxwDgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:48:52.83Z",
+              "WhenOpened": "2025-03-24T07:56:38.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs",
-              "RelativeDocumentMoniker": "Registration.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T07:40:07.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T22:39:13.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T22:36:25.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "Login.Designer.cs",
-              "ToolTip": "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Login.Designer.cs",
-              "RelativeToolTip": "Login.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T22:36:17.29Z"
+              "WhenOpened": "2025-03-23T22:36:25.854Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         }

@@ -89,6 +89,7 @@
             Controls.Add(button2);
             Name = "Dashboard";
             Text = "Dashboard";
+            Load += Dashboard_Load;
             ResumeLayout(false);
         }
 

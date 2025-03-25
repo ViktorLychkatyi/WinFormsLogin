@@ -70,6 +70,7 @@
             Controls.Add(label2);
             Name = "CreatedAccount";
             Text = "CreatedAccount";
+            Load += CreatedAccount_Load;
             ResumeLayout(false);
         }
 

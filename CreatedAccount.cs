@@ -26,5 +26,10 @@ namespace WinFormsLogin
             this.Hide();
             login.FormClosed += (s, args) => this.Close();
         }
+
+        private void CreatedAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

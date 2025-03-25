@@ -69,11 +69,11 @@
             label1.AllowDrop = true;
             label1.Anchor = AnchorStyles.None;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(263, 56);
+            label1.Location = new Point(263, 51);
             label1.Name = "label1";
             label1.Size = new Size(253, 45);
             label1.TabIndex = 5;
-            label1.Text = "РЕГИСТРАЦИЯ";
+            label1.Text = "Регистрация";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
@@ -105,6 +105,7 @@
             textBox3.PlaceholderText = "Придумайте пароль";
             textBox3.Size = new Size(250, 29);
             textBox3.TabIndex = 8;
+            textBox3.UseSystemPasswordChar = true;
             // 
             // textBox4
             // 
@@ -117,6 +118,7 @@
             textBox4.PlaceholderText = "Повторно введите пароль";
             textBox4.Size = new Size(250, 29);
             textBox4.TabIndex = 9;
+            textBox4.UseSystemPasswordChar = true;
             // 
             // button2
             // 
@@ -139,11 +141,12 @@
             button3.Name = "button3";
             button3.Size = new Size(148, 29);
             button3.TabIndex = 11;
-            button3.Text = "Добавить фотографию";
+            button3.Text = "Удалить фото";
             button3.UseVisualStyleBackColor = true;
             // 
             // linkLabel1
             // 
+            linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.AutoSize = true;
             linkLabel1.Location = new Point(332, 302);
             linkLabel1.Name = "linkLabel1";
@@ -169,6 +172,7 @@
             Controls.Add(button1);
             Name = "Registration";
             Text = "Registration";
+            Load += Registration_Load;
             ResumeLayout(false);
             PerformLayout();
         }

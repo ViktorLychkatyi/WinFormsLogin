@@ -36,5 +36,10 @@ namespace WinFormsLogin
             this.Hide();
             login.FormClosed += (s, args) => this.Close();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

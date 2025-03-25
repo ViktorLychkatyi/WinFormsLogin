@@ -58,11 +58,11 @@
             label1.AllowDrop = true;
             label1.Anchor = AnchorStyles.None;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(319, 103);
+            label1.Location = new Point(319, 98);
             label1.Name = "label1";
             label1.Size = new Size(136, 45);
             label1.TabIndex = 1;
-            label1.Text = "ВОЙТИ";
+            label1.Text = "Войти";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
@@ -96,6 +96,7 @@
             // 
             // linkLabel1
             // 
+            linkLabel1.Anchor = AnchorStyles.None;
             linkLabel1.AutoSize = true;
             linkLabel1.Location = new Point(326, 336);
             linkLabel1.Name = "linkLabel1";
@@ -107,6 +108,7 @@
             // 
             // linkLabel2
             // 
+            linkLabel2.Anchor = AnchorStyles.None;
             linkLabel2.AutoSize = true;
             linkLabel2.Location = new Point(336, 249);
             linkLabel2.Name = "linkLabel2";
