@@ -5,14 +5,31 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace WinFormsLogin
 {
     public partial class ForgotPassword : Form
     {
+        IConfiguration config = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .Build();
+
+        public string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(password);
+                byte[] hashBytes = sha256.ComputeHash(bytes);
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
+        }
+
         public ForgotPassword()
         {
             InitializeComponent();
@@ -45,7 +62,7 @@ namespace WinFormsLogin
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string connectionString = "Server=localhost; Database=BaseUsers; Integrated Security=True; TrustServerCertificate=True;";
+            string connectionString = config.GetConnectionString("DefaultConnection");
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -54,6 +71,7 @@ namespace WinFormsLogin
                 string login = textBox3.Text.Trim();
                 string new_password = textBox1.Text.Trim();
                 string confirm_password = textBox2.Text.Trim();
+                string hashedPassword = HashPassword(new_password);
 
                 if (new_password != confirm_password)
                 {
@@ -75,7 +93,7 @@ namespace WinFormsLogin
                         using (SqlCommand updateCommand = new SqlCommand(updateQuery, connection))
                         {
                             updateCommand.Parameters.AddWithValue("@username", login);
-                            updateCommand.Parameters.AddWithValue("@newPassword", new_password);
+                            updateCommand.Parameters.AddWithValue("@newPassword", hashedPassword);
                             int rowsAffected = updateCommand.ExecuteNonQuery();
 
                             if (rowsAffected > 0)
@@ -91,12 +109,14 @@ namespace WinFormsLogin
                             else
                             {
                                 MessageBox.Show("Ошибка при изменении пароля! Запись не найдена.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
                             }
                         }
                     }
                     else
                     {
                         MessageBox.Show("Пользователь не найден!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                     }
                 }
             }

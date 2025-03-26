@@ -1,4 +1,5 @@
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace WinFormsLogin
 {
@@ -12,15 +13,7 @@ namespace WinFormsLogin
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            string connectionString = "Server=localhost; Database=BaseUsers; TrustServerCertificate=True;";
             Application.Run(new Login());
-
-            //using (SqlConnection connection = new SqlConnection(connectionString))
-            //{
-            //    connection.Open();
-
-            //    //MessageBox.Show("Connection successful", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
         }
     }
 }

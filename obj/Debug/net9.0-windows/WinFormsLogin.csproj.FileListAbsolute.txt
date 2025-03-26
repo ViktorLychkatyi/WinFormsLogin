@@ -14,9 +14,7 @@ C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.pdb
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.genruntimeconfig.cache
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\ref\WinFormsLogin.dll
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.Login.resources
-C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.Registration.resources
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.Properties.Resources.resources
-C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.CreatedAccount.resources
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.Dashboard.resources
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.ForgotPassword.resources
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.sourcelink.json
@@ -140,3 +138,11 @@ C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\runtimes\win-x86\
 C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.csproj.AssemblyReference.cache
 C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinForms.F7F40BBD.Up2Date
+C:\Users\Viktor\Desktop\WinFormsLogin\obj\Debug\net9.0-windows\WinFormsLogin.Registration.resources
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Viktor\Desktop\WinFormsLogin\bin\Debug\net9.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll

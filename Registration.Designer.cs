@@ -34,9 +34,10 @@
             button1 = new Button();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            button2 = new Button();
             button3 = new Button();
             linkLabel1 = new LinkLabel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBox2
@@ -120,19 +121,6 @@
             textBox4.TabIndex = 9;
             textBox4.UseSystemPasswordChar = true;
             // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.None;
-            button2.BackColor = SystemColors.ControlDark;
-            button2.Cursor = Cursors.Hand;
-            button2.Image = Properties.Resources.add_photo_alternate_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24;
-            button2.Location = new Point(172, 113);
-            button2.Name = "button2";
-            button2.Size = new Size(148, 119);
-            button2.TabIndex = 10;
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // button3
             // 
             button3.Anchor = AnchorStyles.None;
@@ -143,6 +131,7 @@
             button3.TabIndex = 11;
             button3.Text = "Удалить фото";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // linkLabel1
             // 
@@ -156,14 +145,26 @@
             linkLabel1.Text = "Есть аккаунт? Войти";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.AppWorkspace;
+            pictureBox1.BackgroundImage = Properties.Resources.add_photo_alternate_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Location = new Point(172, 113);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(148, 119);
+            pictureBox1.TabIndex = 13;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(linkLabel1);
             Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -173,6 +174,7 @@
             Name = "Registration";
             Text = "Registration";
             Load += Registration_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,8 +187,8 @@
         private Button button1;
         private TextBox textBox3;
         private TextBox textBox4;
-        private Button button2;
         private Button button3;
         private LinkLabel linkLabel1;
+        private PictureBox pictureBox1;
     }
 }

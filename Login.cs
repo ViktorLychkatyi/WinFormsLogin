@@ -4,10 +4,30 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using System.Xml;
+using System.Text;
 namespace WinFormsLogin;
+using System.Security.Cryptography;
+using System.Text;
 
 public partial class Login : Form
 {
+    IConfiguration config = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .Build();
+
+    public static string LoggedInUsername { get; set; }
+
+    public string HashPassword(string password) 
+    {
+        using (SHA256 sha256 = SHA256.Create())
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(password);
+            byte[] hashBytes = sha256.ComputeHash(bytes);
+            return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+        }
+    }
+
     public Login()
     {
         InitializeComponent();
@@ -16,26 +36,28 @@ public partial class Login : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
-        string connectionString = "Server=localhost; Database=BaseUsers; Integrated Security=True; TrustServerCertificate=True;";
+        string connectionString = config.GetConnectionString("DefaultConnection");
 
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             connection.Open();
 
-            string login = textBox1.Text.Trim();
+            string username = textBox1.Text.Trim();
             string password = textBox2.Text.Trim();
+            string hashedPassword = HashPassword(password);
 
             string query = "SELECT * FROM Info WHERE Username = @username AND Password = @password";
 
             using (SqlCommand command = new SqlCommand(query, connection))
             {
-                command.Parameters.AddWithValue("@username", login);
-                command.Parameters.AddWithValue("@password", password);
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@password", hashedPassword);
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.HasRows)
                     {
+                        LoggedInUsername = username;
                         OpenDashboard();
                     }
                     else
