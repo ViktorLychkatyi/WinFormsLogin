@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using Microsoft.Extensions.Configuration;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WinFormsLogin
 {
@@ -70,83 +71,82 @@ namespace WinFormsLogin
         {
             string connectionString = config.GetConnectionString("DefaultConnection");
 
-            try
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text))
             {
-                if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text))
-                {
-                    MessageBox.Show("Пожалуйста, заполните все поля для регистрации.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (textBox3.Text != textBox4.Text)
-                {
-                    MessageBox.Show("Пароли не совпадают.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                string username = textBox1.Text;
-                string email = textBox2.Text;
-                string password = textBox3.Text;
-                string confrim_password = textBox4.Text;
-
-                string hashedPassword = HashPassword(password);
-
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    string checkUserQuery = "SELECT COUNT(*) FROM Info WHERE Username = @Username";
-                    using (SqlCommand checkUserCommand = new SqlCommand(checkUserQuery, connection))
-                    {
-                        checkUserCommand.Parameters.AddWithValue("@Username", username);
-                        int userExists = (int)checkUserCommand.ExecuteScalar();
-
-                        if (userExists > 0)
-                        {
-                            MessageBox.Show("Пользователь с таким именем уже существует!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-
-                    string registerQuery = "INSERT INTO Info (Username, Email, Password, profile_picture) VALUES (@Username, @Email, @Password, @profile_picture)";
-                    using (SqlCommand registerCommand = new SqlCommand(registerQuery, connection))
-                    {
-                        registerCommand.Parameters.AddWithValue("@Username", username);
-                        registerCommand.Parameters.AddWithValue("@Email", email);
-                        registerCommand.Parameters.AddWithValue("@Password", hashedPassword);
-
-                        if (!string.IsNullOrEmpty(imagePath))
-                        {
-                            registerCommand.Parameters.AddWithValue("@profile_picture", imagePath);
-                        }
-                        else
-                        {
-                            registerCommand.Parameters.AddWithValue("@profile_picture", DBNull.Value);
-                        }
-
-                        int rowsAffected = registerCommand.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            MessageBox.Show("Пользователь успешно зарегистрирован!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Login login = new Login();
-                            login.StartPosition = FormStartPosition.CenterScreen;
-                            login.Show();
-
-                            this.Hide();
-                            login.FormClosed += (s, args) => this.Close();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Ошибка при регистрации пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Произошла ошибка: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Пожалуйста, заполните все поля для регистрации.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+
+            if (textBox3.Text != textBox4.Text)
+            {
+                MessageBox.Show("Пароли не совпадают.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string username = textBox1.Text;
+            string email = textBox2.Text;
+            string password = textBox3.Text;
+            string confrim_password = textBox4.Text;
+
+            string hashedPassword = HashPassword(password);
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string checkQuery = "SELECT COUNT(*) FROM Info WHERE Username = @username";
+                using (SqlCommand checkCommand = new SqlCommand(checkQuery, connection))
+                {
+                    checkCommand.Parameters.AddWithValue("@username", username);
+                    int userExists = (int)checkCommand.ExecuteScalar();
+
+                    if (userExists > 0)
+                    {
+                        MessageBox.Show("Пользователь с таким именем уже существует!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                string registerQuery = "INSERT INTO Info (Username, Email, Password, profile_picture) VALUES (@username, @email, @password, @profile_picture)";
+                using (SqlCommand registerCommand = new SqlCommand(registerQuery, connection))
+                {
+                    registerCommand.Parameters.AddWithValue("@username", username);
+                    registerCommand.Parameters.AddWithValue("@email", email);
+                    registerCommand.Parameters.AddWithValue("@password", hashedPassword);
+
+                    byte[] imageBytes = null;
+
+                    if (!string.IsNullOrEmpty(imagePath))
+                    {
+                        imageBytes = File.ReadAllBytes(imagePath);
+                    }
+
+                    if (imageBytes != null && imageBytes.Length > 0)
+                    {
+                        registerCommand.Parameters.Add("@profile_picture", SqlDbType.VarBinary).Value = imageBytes;
+                    }
+                    else
+                    {
+                        registerCommand.Parameters.Add("@profile_picture", SqlDbType.VarBinary).Value = DBNull.Value;
+                    }
+
+                    int rowsAffected = registerCommand.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Пользователь успешно зарегистрирован!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Login login = new Login();
+                        login.StartPosition = FormStartPosition.CenterScreen;
+                        login.Show();
+
+                        this.Hide();
+                        login.FormClosed += (s, args) => this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибка при регистрации пользователя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
             }
         }
 
@@ -157,15 +157,14 @@ namespace WinFormsLogin
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Изображения |*.jpg;*.jpeg;*.png;*.bmp;*.tiff;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                openFileDialog.Filter = "Изображения (*.jpg;*.png;*.bmp)|*.jpg;*.png;*.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    imagePath = openFileDialog.FileName;
-                    pictureBox1.ImageLocation = imagePath;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                }
+                imagePath = openFileDialog.FileName;
+                pictureBox1.Image = new Bitmap(openFileDialog.FileName);
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 

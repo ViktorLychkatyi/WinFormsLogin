@@ -79,12 +79,12 @@ namespace WinFormsLogin
                     return;
                 }
 
-                string checkUserQuery = "SELECT COUNT(*) FROM Info WHERE Username = @username";
+                string checkQuery = "SELECT COUNT(*) FROM Info WHERE Username = @username";
 
-                using (SqlCommand checkUserCommand = new SqlCommand(checkUserQuery, connection))
+                using (SqlCommand checkCommand = new SqlCommand(checkQuery, connection))
                 {
-                    checkUserCommand.Parameters.AddWithValue("@username", login);
-                    int userExists = (int)checkUserCommand.ExecuteScalar();
+                    checkCommand.Parameters.AddWithValue("@username", login);
+                    int userExists = (int)checkCommand.ExecuteScalar();
 
                     if (userExists == 1)
                     {

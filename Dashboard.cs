@@ -59,28 +59,28 @@ namespace WinFormsLogin
         {
             string connectionString = config.GetConnectionString("DefaultConnection");
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                conn.Open();
-
+                connection.Open();
                 string query = "SELECT profile_picture FROM Info WHERE Username = @username";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@username", username);
 
-                    object result = cmd.ExecuteScalar();
-                    if (result != null && result is string imagePath)
+                    object result = command.ExecuteScalar();
+                    if (result != null && result is byte[] imageBytes)
                     {
-                        if (File.Exists(imagePath))
+                        using (MemoryStream ms = new MemoryStream(imageBytes))
                         {
-                            pictureBox1.Image = Image.FromFile(imagePath);
+                            pictureBox1.Image = Image.FromStream(ms);
                             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                         }
                     }
                 }
             }
         }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
