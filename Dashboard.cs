@@ -50,7 +50,7 @@ namespace WinFormsLogin
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            string username = Login.LoggedInUsername;
+            string username = Login.GetLoggedInUsername();
             label1.Text = username;
             LoadUserProfilePicture(username);
         }
@@ -84,10 +84,15 @@ namespace WinFormsLogin
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

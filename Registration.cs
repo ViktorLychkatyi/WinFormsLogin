@@ -150,6 +150,55 @@ namespace WinFormsLogin
             }
         }
 
+        //public void AddUser()
+        //{
+        //    using (var db = new AppDbContext())
+        //    {
+        //        var userExist = db.Info?.FirstOrDefault(u => u.Username == "Roman888" && u.Email == "Roman888@mail.com");
+        //        string hashedPassword = HashPassword("nuroma");
+        //        byte[] profile_pciture = null;
+        //        string imagePath = "C:\\Users\\Viktor\\Desktop\\WinFormsLogin\\Resources\\milad-fakurian-BgdyN3qIdTk-unsplash.jpg";
+
+        //        if (File.Exists(imagePath))
+        //        {
+        //            using (MemoryStream ms = new MemoryStream())
+        //            {
+        //                Image img = Image.FromFile(imagePath);
+        //                img.Save(ms, img.RawFormat);
+        //                profile_pciture = ms.ToArray();
+        //            }
+        //        }
+
+        //        if (userExist == null)
+        //        {
+        //            var newUser = new User
+        //            {
+        //                Username = "Roman888",
+        //                Email = "Roman888@mail.com",
+        //                Password = hashedPassword,
+        //                ProfilePicture = profile_pciture
+        //            };
+        //            db.Info?.Add(newUser);
+        //            db.SaveChanges();
+
+        //            MessageBox.Show("Пользователь успешно добавлен в базу данных!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Пользователь с таким email уже существует!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        }
+
+        //        var userAvatar = db.Info?.FirstOrDefault(u => u.Username == "Roman888" && u.Email == "Roman888@mail.com");
+        //        if (userAvatar?.ProfilePicture != null)
+        //        {
+        //            using (MemoryStream ms = new MemoryStream(userAvatar.ProfilePicture))
+        //            {
+        //                pictureBox1.Image = Image.FromStream(ms);
+        //            }
+        //        }
+        //    }
+        //}
+
         private void Registration_Load(object sender, EventArgs e)
         {
 

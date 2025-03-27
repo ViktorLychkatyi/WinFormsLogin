@@ -8,6 +8,7 @@ using System.Text;
 namespace WinFormsLogin;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 public partial class Login : Form
 {
@@ -16,9 +17,19 @@ public partial class Login : Form
         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
         .Build();
 
-    public static string LoggedInUsername { get; set; }
+    private static string loggedInUsername;
 
-    public string HashPassword(string password) 
+    public static string GetLoggedInUsername()
+    {
+        return loggedInUsername;
+    }
+
+    public static void SetLoggedInUsername(string value)
+    {
+        loggedInUsername = value;
+    }
+
+    public string HashPassword(string password)
     {
         using (SHA256 sha256 = SHA256.Create())
         {
@@ -32,6 +43,8 @@ public partial class Login : Form
     {
         InitializeComponent();
         this.StartPosition = FormStartPosition.CenterScreen;
+        //Registration registration = new Registration();
+        //registration.AddUser();
     }
 
     private void button1_Click(object sender, EventArgs e)
@@ -57,7 +70,7 @@ public partial class Login : Form
                 {
                     if (reader.HasRows)
                     {
-                        LoggedInUsername = username;
+                        SetLoggedInUsername(username);
                         OpenDashboard();
                     }
                     else
